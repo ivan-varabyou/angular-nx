@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "app",
   "sourceRoot": "apps/frontend-client/src",
-  "tags": [],
+  "tags": ["scope:frontend-client"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",

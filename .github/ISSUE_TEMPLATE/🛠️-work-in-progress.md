@@ -7,6 +7,6 @@ assignees: ivan-varabyou
 
 ---
 
-##At this stage you need to do the following
+## At this stage you need to do the following
 
 - [ ]

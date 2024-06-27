@@ -1,7 +1,6 @@
 import { Component } from '@angular/core'
 import { RouterModule } from '@angular/router'
 
-
 @Component({
   standalone: true,
   imports: [RouterModule],
@@ -10,5 +9,5 @@ import { RouterModule } from '@angular/router'
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'frontend-client'
+  title = 'frontend-admin'
 }

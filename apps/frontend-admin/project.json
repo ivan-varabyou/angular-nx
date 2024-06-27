@@ -1,28 +1,28 @@
 {
-  "name": "frontend-client",
+  "name": "frontend-admin",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/frontend-client/src",
-  "tags": ["scope:frontend-client"],
+  "sourceRoot": "apps/frontend-admin/src",
+  "tags": ["scope:frontend-admin"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/frontend-client",
-        "index": "apps/frontend-client/src/index.html",
-        "browser": "apps/frontend-client/src/main.ts",
+        "outputPath": "dist/apps/frontend-admin",
+        "index": "apps/frontend-admin/src/index.html",
+        "browser": "apps/frontend-admin/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/frontend-client/tsconfig.app.json",
+        "tsConfig": "apps/frontend-admin/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/frontend-client/public"
+            "input": "apps/frontend-admin/public"
           }
         ],
-        "styles": ["apps/frontend-client/src/styles.scss"],
+        "styles": ["apps/frontend-admin/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -53,12 +53,12 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "frontend-client:build:production",
-          "port": 4200
+          "buildTarget": "frontend-admin:build:production",
+          "port": 4201
         },
         "development": {
-          "buildTarget": "frontend-client:build:development",
-          "port": 4200
+          "buildTarget": "frontend-admin:build:development",
+          "port": 4201
         }
       },
       "defaultConfiguration": "development"
@@ -66,7 +66,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "frontend-client:build"
+        "buildTarget": "frontend-admin:build"
       }
     },
     "lint": {
@@ -76,15 +76,15 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/frontend-client/jest.config.ts"
+        "jestConfig": "apps/frontend-admin/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "frontend-client:build",
-        "port": 4200,
-        "staticFilePath": "dist/apps/frontend-client/browser",
+        "buildTarget": "frontend-admin:build",
+        "port": 4201,
+        "staticFilePath": "dist/apps/frontend-admin/browser",
         "spa": true
       }
     }

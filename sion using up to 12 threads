@@ -1,0 +1,67 @@
+[33mcommit c96b24e137665a0d3b92e7d1228ca87df8f0b32c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Ivan Varabyou <85835188+ivan-varabyou@users.noreply.github.com>
+Date:   Thu Jun 27 14:03:44 2024 +0300
+
+    feat(github): update issue templates WiP
+    
+    * update template description
+
+[33mcommit 924ed298b84c3bf7f24df8535d3f4710591fbee7[m
+Author: Ivan Varabyou <85835188+ivan-varabyou@users.noreply.github.com>
+Date:   Thu Jun 27 14:00:32 2024 +0300
+
+    feat(github): update issue templates WiP
+    
+    * add default label WiP
+    * add default assignees: ivan-varabyou
+
+[33mcommit fdccb401745fe6c5dfee30ed8a9a48afb25fe208[m
+Author: Ivan Varabyou <onebelbiz@gmail.com>
+Date:   Thu Jun 27 13:51:08 2024 +0300
+
+    feat(project.json): add tags
+    
+    add tag
+    
+    Closes #1
+
+[33mcommit 75b5f511a92603ca5e73a0b36d885df7179e79ba[m
+Author: Ivan Varabyou <85835188+ivan-varabyou@users.noreply.github.com>
+Date:   Thu Jun 27 13:46:02 2024 +0300
+
+    feat(github): Update issue template [WiP]
+    
+    * add Bug report
+    * add Feature request
+    * add Work in Progress
+    
+    template issues
+
+[33mcommit 68724a2d5bfdacafac1bbe8cd5a583d8fee0a877[m
+Author: Ivan Varabyou <onebelbiz@gmail.com>
+Date:   Thu Jun 27 13:43:32 2024 +0300
+
+    init(Nx ws): start project
+
+[33mcommit 4503b6c521afead26a033514bbce466cc13c755b[m
+Author: Ivan Varabyou <onebelbiz@gmail.com>
+Date:   Thu Jun 27 13:35:53 2024 +0300
+
+    feat(nx): Generated CI workflow
+
+[33mcommit 59bd173b8d8b1029b719115976018ca3bfd815c9[m
+Author: Ivan Varabyou <onebelbiz@gmail.com>
+Date:   Thu Jun 27 13:35:48 2024 +0300
+
+    feat(nx): Added Nx Cloud token to your nx.json
+    
+              To connect your workspace to Nx Cloud, push your repository
+              to your git hosting provider and go to the following URL:
+    
+              https://cloud.nx.app/connect/aHEZCMIOKr
+
+[33mcommit 20dbf7cc7e029dd086add63e98c27559b1ab8065[m
+Author: Ivan Varabyou <onebelbiz@gmail.com>
+Date:   Thu Jun 27 13:35:40 2024 +0300
+
+    Initial commit

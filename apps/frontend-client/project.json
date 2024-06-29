@@ -4,16 +4,23 @@
   "projectType": "application",
   "prefix": "app",
   "sourceRoot": "apps/frontend-client/src",
-  "tags": ["scope:frontend-client"],
+  "tags": [
+    "scope:frontend-client",
+    "type:app"
+  ],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/frontend-client",
         "index": "apps/frontend-client/src/index.html",
         "browser": "apps/frontend-client/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/frontend-client/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -22,7 +29,9 @@
             "input": "apps/frontend-client/public"
           }
         ],
-        "styles": ["apps/frontend-client/src/styles.scss"],
+        "styles": [
+          "apps/frontend-client/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -61,7 +70,10 @@
           "port": 4200
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/frontend-client/proxy.conf.json"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -74,7 +86,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/frontend-client/jest.config.ts"
       }

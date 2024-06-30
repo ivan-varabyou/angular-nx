@@ -2,7 +2,10 @@
   "name": "@angular-nx/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "db:start": "cp .env ./docker-compose && cd docker-compose && docker-compose up -d",
+    "db:stop": "cd docker-compose && docker-compose stop && rm .env"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.0.0",
@@ -16,11 +19,14 @@
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
+    "@nestjs/typeorm": "^10.0.2",
     "@nx/angular": "19.3.2",
     "axios": "^1.6.0",
+    "pg": "^8.12.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "typeorm": "^0.3.20",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {

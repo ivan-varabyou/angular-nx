@@ -31,8 +31,13 @@
           }
         ],
         "styles": [
-          "apps/frontend-admin/src/styles.scss"
+          "apps/frontend-admin/src/styles/styles.scss"
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "apps/frontend-admin/src/styles"
+          ]
+        },
         "scripts": []
       },
       "configurations": {

@@ -19,7 +19,8 @@
         "index": "apps/frontend-client/src/index.html",
         "browser": "apps/frontend-client/src/main.ts",
         "polyfills": [
-          "zone.js"
+          "zone.js",
+          "@angular/localize/init"
         ],
         "tsConfig": "apps/frontend-client/tsconfig.app.json",
         "inlineStyleLanguage": "scss",

@@ -38,6 +38,7 @@
             "apps/frontend-client/src/styles"
           ]
         },
+        "extractCss": true,
         "scripts": []
       },
       "configurations": {

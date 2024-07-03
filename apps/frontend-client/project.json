@@ -6,7 +6,8 @@
   "sourceRoot": "apps/frontend-client/src",
   "tags": [
     "scope:frontend-client",
-    "type:app"
+    "type:app",
+    "type:lib"
   ],
   "targets": {
     "build": {
@@ -31,7 +32,6 @@
           }
         ],
         "styles": [
-          "@angular/material/prebuilt-themes/magenta-violet.css",
           "ws-styles/styles.scss",
           "apps/frontend-client/src/styles/styles.scss"
         ],

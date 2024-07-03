@@ -1,11 +1,17 @@
-/* Import from bootstrap */
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/variables-dark";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+/* Import from bootstrap Required  */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+/**
+ * Import from bootstrap Optional
+ */
+@import 'bootstrap/scss/containers';
+@import 'bootstrap/scss/mixins/grid';
+//@import 'bootstrap/scss/grid';
 
 /* replace angular material and bootstrap on your scss */
 @import 'abstract';
+
+
 

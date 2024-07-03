@@ -1,0 +1,15 @@
+@import 'utils';
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  width: 100px;
+  height: 100px;
+
+  &::after {
+    content: $text;
+  }
+}

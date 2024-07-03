@@ -6,7 +6,8 @@
   "sourceRoot": "apps/frontend-client/src",
   "tags": [
     "scope:frontend-client",
-    "type:app"
+    "type:app",
+    "type:lib"
   ],
   "targets": {
     "build": {
@@ -19,7 +20,8 @@
         "index": "apps/frontend-client/src/index.html",
         "browser": "apps/frontend-client/src/main.ts",
         "polyfills": [
-          "zone.js"
+          "zone.js",
+          "@angular/localize/init"
         ],
         "tsConfig": "apps/frontend-client/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
@@ -30,8 +32,14 @@
           }
         ],
         "styles": [
-          "apps/frontend-client/src/styles.scss"
+          "ws-styles/styles.scss",
+          "apps/frontend-client/src/styles/styles.scss"
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "apps/frontend-client/src/styles"
+          ]
+        },
         "scripts": []
       },
       "configurations": {

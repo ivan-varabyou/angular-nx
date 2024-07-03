@@ -19,7 +19,8 @@
         "index": "apps/frontend-admin/src/index.html",
         "browser": "apps/frontend-admin/src/main.ts",
         "polyfills": [
-          "zone.js"
+          "zone.js",
+          "@angular/localize/init"
         ],
         "tsConfig": "apps/frontend-admin/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
@@ -30,8 +31,13 @@
           }
         ],
         "styles": [
-          "apps/frontend-admin/src/styles.scss"
+          "apps/frontend-admin/src/styles/styles.scss"
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "apps/frontend-admin/src/styles"
+          ]
+        },
         "scripts": []
       },
       "configurations": {

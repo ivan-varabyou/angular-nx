@@ -3,11 +3,11 @@ import {Controller, Get} from '@nestjs/common';
 
 @Controller()
 export class AppController {
-  constructor() {
-  }
+    constructor() {
+    }
 
-  @Get()
-  getData() {
-    return {message: "Welcome to backend-api"}
-  }
+    @Get()
+    getData() {
+        return {message: "Welcome to backend-api"}
+    }
 }

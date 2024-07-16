@@ -6,4 +6,5 @@
 
 ## Tags
 
-v.0.1.0 init AngularNx workspace with backend-api and frontend-client and admin app
+v0.1.0 init AngularNX workspace with backend-api and frontend-client & frontend-admin
+

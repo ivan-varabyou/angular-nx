@@ -4,8 +4,8 @@ import {appRoutes} from './app.routes';
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async'
 
 export const appConfig: ApplicationConfig = {
-  providers: [
-    provideZoneChangeDetection({eventCoalescing: true}),
-    provideRouter(appRoutes), provideAnimationsAsync()
-  ]
+    providers: [
+        provideZoneChangeDetection({eventCoalescing: true}),
+        provideRouter(appRoutes), provideAnimationsAsync()
+    ]
 }

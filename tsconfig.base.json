@@ -17,6 +17,9 @@
     "paths": {
       "@angular-nx/frontend/client/ui/layout": [
         "libs/frontend/client/ui/layout/src/index.ts"
+      ],
+      "@angular-nx/shared/data-access/interfaces": [
+        "libs/shared/data-access/interfaces/src/index.ts"
       ]
     }
   },

@@ -2,12 +2,12 @@
 
 .bg {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: $primary-color;
   width: 100px;
   height: 100px;
+  background-color: $primary-color;
 
   &::after {
     content: $text;

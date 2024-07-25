@@ -4,6 +4,9 @@ import { UserService } from '../users/services/user.service'
 import { PassportModule } from '@nestjs/passport'
 import { JwtModule } from '@nestjs/jwt'
 import { environment } from '../../../environments/environment'
+import { PasswordService } from './services/password.service'
+import { JwtStrategy } from './services/jwt.strategy'
+import { AuthResolver } from './resolvers/auth.resolver'
 
 
 @Module({
@@ -15,8 +18,8 @@ import { environment } from '../../../environments/environment'
 			signOptions: {expiresIn: environment.jwt.expiresIn}
 		}))
 	],
-	exports: [],
-	providers: [AuthServices]
+	providers: [AuthServices, PasswordService, JwtStrategy, AuthResolver],
+	exports: [AuthServices, PassportModule]
 })
 export class AuthModule {
 

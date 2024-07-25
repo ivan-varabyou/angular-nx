@@ -4,11 +4,11 @@ import {
 	ISignAuthResponse
 } from '@angular-nx/shared/data-access/interfaces'
 import { SignIn } from '../decorators/auth.decorator'
-import { AuthServices } from '../services/auth.services'
+import { AuthService } from '../services/auth.service'
 
 @Resolver('Auth')
 export class AuthResolver {
-	constructor(private readonly authService: AuthServices) {
+	constructor(private readonly authService: AuthService) {
 	}
 
 	@Query('login')

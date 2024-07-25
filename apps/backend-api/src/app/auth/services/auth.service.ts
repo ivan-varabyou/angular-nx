@@ -10,7 +10,7 @@ import { UserEntitiy } from '../../users/entities/user.entitiy'
 import { environment } from '../../../../environments/environment'
 
 @Injectable()
-export class AuthServices {
+export class AuthService {
 	constructor(
 		private readonly passwordService: PasswordService,
 		private readonly jwtService: JwtService,

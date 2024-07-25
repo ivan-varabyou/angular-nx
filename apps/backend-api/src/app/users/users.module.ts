@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common'
-import { UserEntitiy } from './entities/user.entitiy'
 import { TypeOrmModule } from '@nestjs/typeorm'
+
+import { UserEntitiy } from './entities/user.entitiy'
 import { UserResolver } from './resolvers/user.resolver'
 import { UserService } from './services/user.service'
 

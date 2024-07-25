@@ -2,3 +2,5 @@ scalar Date
 scalar Upload
 scalar JSON
 
+type Query
+

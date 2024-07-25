@@ -1,7 +1,11 @@
+name: "Backend API GraphQL"
+projects:
+  api:
+    schema: './**/*.graphql'
 extensions:
   endpoints:
     default:
-      url: http://localhost:3000/graphql
+      url: 'http://localhost:3000/graphql'
       headers:
-        user-agent: JS GraphQL
+        user-agent: 'JS GraphQL'
       introspect: false

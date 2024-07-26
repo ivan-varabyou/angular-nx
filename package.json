@@ -4,7 +4,10 @@
   "license": "MIT",
   "scripts": {
     "db:start": "cp .env ./docker-compose && cd docker-compose && docker-compose up -d",
-    "db:stop": "cd docker-compose && docker-compose stop && rm .env"
+    "db:stop": "cd docker-compose && docker-compose stop && rm .env",
+    "backend:api:entities": "node_modules/.bin/tsc --project apps/backend/api/tsconfig.entities.json",
+    "backend:api:migrations:run": "node_modules/.bin/tsc --project apps/backend/api/tsconfig.migrations.json && node_modules/.bin/ts-node node_modules/.bin/typeorm migration:run -t=false",
+    "backend:api:migration:create": "node_modules/.bin/ts-node node_modules/.bin/typeorm migration:create -n"
   },
   "private": true,
   "dependencies": {

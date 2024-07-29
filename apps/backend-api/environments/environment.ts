@@ -15,6 +15,6 @@ export const environment = {
 		database: process.env.DB_NAME,
 		dropSchema: false,
 		synchronize: true,
-		logging: true // log db in console
+		logging: false // log db in console
 	}
 }

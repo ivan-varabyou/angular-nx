@@ -1,5 +1,10 @@
+# Custom scalar type for representing dates.
 scalar Date
+
+# Custom scalar type for handling file uploads.
 scalar Upload
+
+# Custom scalar type for representing JSON data.
 scalar JSON
 
 type Query

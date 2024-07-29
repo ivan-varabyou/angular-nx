@@ -1,6 +1,6 @@
 import { Query, Resolver } from '@nestjs/graphql'
 import { CurrentUser } from '../decorators/user.decorator'
-import { UserEntitiy } from '../entities/user.entitiy'
+import { UserEntity } from '../entities/user.entity'
 import { UserService } from '../services/user.service'
 import { UseGuards } from '@nestjs/common'
 import { GqlAuthGuard } from '../guards/gql.auth-guard'
@@ -12,7 +12,7 @@ export class UserResolver {
 
 	@Query('user')
 	@UseGuards(GqlAuthGuard)
-	async whoAmI(@CurrentUser() user: UserEntitiy) {
-		return this.userService.findOneById(user.id)
+	async whoAmI(@CurrentUser() user: UserEntity) {
+		return await this.userService.findOneById(user.id)
 	}
 }

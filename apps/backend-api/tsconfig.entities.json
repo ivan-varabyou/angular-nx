@@ -1,17 +1,18 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist",
+    "outDir": "../../dist",
     "types": [
       "node"
     ],
-    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "target": "ES5",
     "module": "commonjs"
   },
   "exclude": [
     "src/**/*.spec.ts"
   ],
   "include": [
-    "src/migrations/**/*.ts"
+    "src/**/*.entity.ts"
   ]
 }

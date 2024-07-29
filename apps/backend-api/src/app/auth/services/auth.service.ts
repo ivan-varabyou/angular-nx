@@ -6,7 +6,7 @@ import {
 import { UserService } from '../../users/services/user.service'
 import { JwtService } from '@nestjs/jwt'
 import { PasswordService } from './password.service'
-import { UserEntitiy } from '../../users/entities/user.entitiy'
+import { UserEntity } from '../../users/entities/user.entity'
 import { environment } from '../../../../environments/environment'
 
 @Injectable()
@@ -18,7 +18,7 @@ export class AuthService {
 	) {
 	}
 
-	async validateUser(username: string, pass: string): Promise<Omit<UserEntitiy, 'password'>> {
+	async validateUser(username: string, pass: string): Promise<Omit<UserEntity, 'password'>> {
 		const user = await this.userService.findOneByUserName(username)
 
 		const isValid = user ? await this.passwordService.compareHash(pass, user.password) : false

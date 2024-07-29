@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../../dist",
+    "outDir": "../../dist",
     "types": [
       "node"
     ],
@@ -12,6 +12,6 @@
     "src/**/*.spec.ts"
   ],
   "include": [
-    "src/app/**/*entity.ts"
+    "src/migrations/*.ts"
   ]
 }

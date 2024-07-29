@@ -17,11 +17,11 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Generate docs backend-api
-        run: npx nx run backend-api:docs
+        run: npm run backend-api:docs
       - name: Generate docs frontend-admin
-        run: npx nx run frontend-admin:docs
+        run: npm run frontend-admin:docs
       - name: Generate docs frontend-client
-        run: npx nx run frontend-client:docs
+        run: npm run frontend-client:docs
 
       - name: Deploy to GitHub Pages
         if: success()

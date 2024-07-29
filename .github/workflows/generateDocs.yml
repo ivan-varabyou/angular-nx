@@ -1,0 +1,31 @@
+name: Add Documentation
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+      branches:
+      - master
+  workflow_dispatch: 
+
+jobs:
+  createDocs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo 
+      - uses: actions/checkout@v4
+      - name: Install nodejs
+      - uses: actions/setup-node@v4.0.3
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
+      - name: Generation Documentation for All Apps
+        run: npm run apps:docs
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION_GH_PAGE }}

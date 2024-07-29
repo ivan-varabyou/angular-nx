@@ -111,7 +111,7 @@
     "compodoc": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "mkdir docs-temp && cp README.md ./docs-temp && cp ./apps/frontend-admin/docs/README.md ./ &&  npx compodoc -p apps/frontend-admin/tsconfig.app.json --theme vagrant -r 8085 -d docs/frontend-admin/ && rm README.md && cp ./docs-temp/README.md ./ && rm ./docs-temp/README.md && rmdir docs-temp"
+        "command": "mkdir docs-temp && cp README.md ./docs-temp && cp ./apps/frontend-admin/docs/README.md ./ &&  npx compodoc -p apps/frontend-admin/tsconfig.docs.json --theme vagrant -r 8085 -d docs/frontend-admin/ && rm README.md && cp ./docs-temp/README.md ./ && rm ./docs-temp/README.md && rmdir docs-temp"
       }
     }
   }

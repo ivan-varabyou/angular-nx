@@ -6,18 +6,18 @@
 
 // Define a dark theme
 $dark-theme: mat.define-theme((
-  color: (
-    theme-type: dark,
-    primary: mat.$cyan-palette,
-  ),
+        color: (
+                theme-type: dark,
+                primary: mat.$cyan-palette,
+        ),
 ));
 
 // Define a light theme
 $light-theme: mat.define-theme((
-  color: (
-    theme-type: light,
-    primary: mat.$cyan-palette,
-  ),
+        color: (
+                theme-type: light,
+                primary: mat.$cyan-palette,
+        ),
 ));
 
 

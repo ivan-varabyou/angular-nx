@@ -1,4 +1,6 @@
-type Query {
-    test: String
-    name: String
-}
+scalar Date
+scalar Upload
+scalar JSON
+
+type Query
+

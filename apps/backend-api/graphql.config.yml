@@ -1,3 +1,7 @@
+name: Backend API GraphQL
+projects:
+  api:
+    schema: ./src/app/**/*.graphql
 extensions:
   endpoints:
     default:

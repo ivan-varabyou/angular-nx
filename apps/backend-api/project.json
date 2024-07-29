@@ -4,8 +4,8 @@
   "sourceRoot": "apps/backend-api/src",
   "projectType": "application",
   "tags": [
-    "type:app",
-    "scope:backend-api"
+    "scope:backend-api",
+    "lib-type:data-access"
   ],
   "targets": {
     "serve": {

@@ -16,8 +16,12 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install
-      - name: Generate docs
-        run: npm run apps:docs
+      - name: Generate docs backend-api
+        run: nx run backend-api:compodoc
+      - name: Generate docs frontend-admin
+        run: nx run frontend-admin:compodoc
+      - name: Generate docs frontend-client
+        run: nx run frontend-client:compodoc
 
       - name: Deploy to GitHub Pages
         if: success()

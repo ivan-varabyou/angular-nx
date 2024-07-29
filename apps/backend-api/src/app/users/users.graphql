@@ -1,12 +1,40 @@
+# Extends the Query type with a user field.
 extend type Query {
+    """
+    Retrieves a user by their ID.
+    """
     user(id: Int): User
 }
 
+# Represents a user in the system.
 type User {
+    """
+    Unique identifier for the user.
+    """
     id: Int
+
+    """
+    User's username.
+    """
     username: String
+
+    """
+    User's email address.
+    """
     email: String
+
+    """
+    User's phone number.
+    """
     phone: String
+
+    """
+    Date when the user was created.
+    """
     created: Date
+
+    """
+    Date when the user was last updated.
+    """
     updated: Date
 }

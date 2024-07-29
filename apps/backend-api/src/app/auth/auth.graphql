@@ -1,10 +1,35 @@
+# Extends the Query type with a login field.
 extend type Query {
-    login(username: String!, password: String!): SingInResponse
+    """
+    Authenticates a user by validating the provided username and password.
+    Returns an access token, expiration time, and user ID.
+    """
+    login(
+        username: String!,
+        password: String!
+    ): SingInResponse
+
+    """
+    Logs out the currently authenticated user.
+    Returns true if the logout was successful.
+    """
     logout: Boolean
 }
 
+# Represents the response after successful login.
 type SingInResponse {
+    """
+    Access token for the authenticated user.
+    """
     accessToken: String
+
+    """
+    Expiration time (in seconds) for the access token.
+    """
     expiresIn: Int
+
+    """
+    User ID associated with the authenticated session.
+    """
     id: Int
 }

@@ -109,6 +109,12 @@
         "staticFilePath": "dist/apps/frontend-client/browser",
         "spa": true
       }
+    },
+    "compodoc": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "mkdir docs-temp && cp README.md ./docs-temp && cp ./apps/frontend-client/docs/README.md ./ &&  npx compodoc -p apps/frontend-client/tsconfig.docs.json --theme vagrant -r 8085 -d docs/frontend-client/ && rm README.md && cp ./docs-temp/README.md ./ && rm ./docs-temp/README.md && rmdir docs-temp"
+      }
     }
   }
 }

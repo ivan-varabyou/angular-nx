@@ -6,11 +6,9 @@
 
 # Quickstart & documentation
 
-- Generated documentation for all apps (folder name: docs)
-
-```
-npm run apps:docs
-```
+- [Frontend-client Documentation](https://ivan-varabyou.github.io/angular-nx/frontend-client/)
+- [Frontend-admin Documentation](https://ivan-varabyou.github.io/angular-nx/frontend-admin/)
+- [Backend-api Documentation](https://ivan-varabyou.github.io/angular-nx/backend-api/)
 
 ## Tags
 

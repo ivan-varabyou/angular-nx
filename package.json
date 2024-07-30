@@ -75,8 +75,7 @@
     "@compodoc/compodoc": "^1.1.25",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
-    "@ng-bootstrap/ng-bootstrap": "^17.0.0"
-    git,
+    "@ng-bootstrap/ng-bootstrap": "^17.0.0",
     "@nx/cypress": "19.3.2",
     "@nx/eslint": "19.3.2",
     "@nx/eslint-plugin": "19.3.2",

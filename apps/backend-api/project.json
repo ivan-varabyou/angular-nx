@@ -35,7 +35,7 @@
     "compodoc": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "mkdir docs-temp && cp README.md ./docs-temp && cp ./apps/backend-api/docs/README.md ./ &&  npx compodoc -p apps/backend-api/tsconfig.docs.json --theme vagrant -r 8085 -d docs/backend-api/ && rm README.md && cp ./docs-temp/README.md ./ && rm ./docs-temp/README.md && rmdir docs-temp"
+        "command": "mkdir docs-temp && cp README.md ./docs-temp && cp ./apps/backend-api/docs/README.md ./ &&  compodoc -p apps/backend-api/tsconfig.docs.json --theme vagrant -r 8085 -d docs/backend-api/ && rm README.md && cp ./docs-temp/README.md ./ && rm ./docs-temp/README.md && rmdir docs-temp"
       }
     }
   }

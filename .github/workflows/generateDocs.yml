@@ -1,7 +1,11 @@
 name: documentation
 on:
+  pull_request:
+    branches:
+      - main
+      - fix/*
+      - release/*
   workflow_dispatch:
-
 jobs:
   createDocs:
     runs-on: ubuntu-latest

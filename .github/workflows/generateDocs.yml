@@ -16,13 +16,8 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install
-      - name: Generate docs backend-api
-        run: npm run backend-api:docs
-      - name: Generate docs frontend-admin
-        run: npm run frontend-admin:docs
-      - name: Generate docs frontend-client
-        run: npm run frontend-client:docs
-
+      - name: Generate Apps docs
+        run: npm run apps:docs
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v4

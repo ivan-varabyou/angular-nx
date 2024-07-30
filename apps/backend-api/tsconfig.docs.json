@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig.app.json",
   "exclude": [
-    "/**/*.{jpg,png,svg,jpeg,gif}"
+    "/**/*.{jpg,png,svg,jpeg,gif}",
+    "/migrations/*.ts"
   ]
 }

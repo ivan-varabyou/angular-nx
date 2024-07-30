@@ -9,25 +9,29 @@ import { JwtStrategy } from './services/jwt.strategy'
 import { AuthResolver } from './resolvers/auth.resolver'
 import { UsersModule } from '../users/users.module'
 
-
 /**
- * Auth module contain logic of authentication
+ * Authentication module containing logic for user authentication.
  */
 @Module({
 	imports: [
-		UsersModule,
+		UsersModule, // Import the UsersModule to access user-related functionality.
 		PassportModule.register({
-			defaultStrategy: 'jwt'
+			defaultStrategy: 'jwt' // Configure the default authentication strategy.
 		}),
 		JwtModule.register({
-			privateKey: environment.jwt.secret,
+			privateKey: environment.jwt.secret, // Set the JWT secret key.
 			signOptions: {
-				expiresIn: environment.jwt.expiresIn
+				expiresIn: environment.jwt.expiresIn // Set the token expiration time.
 			}
 		})
 	],
-	providers: [AuthService, PasswordService, JwtStrategy, AuthResolver],
-	exports: [AuthService, PassportModule]
+	providers: [AuthService, PasswordService, JwtStrategy, AuthResolver], // Provide
+                                                                        // services
+                                                                        // and
+                                                                        // resolvers.
+	exports: [AuthService, PassportModule] // Export AuthService and
+	// PassportModule for use in other
+	// modules.
 })
 export class AuthModule {
 }

@@ -10,9 +10,15 @@ export class UserResolver {
 	constructor(private readonly userService: UserService) {
 	}
 
+	/**
+	 * GraphQL query to retrieve information about the currently authenticated
+	 * user. Requires authentication using the GqlAuthGuard.
+	 * @param user - The authenticated user (provided by the decorator).
+	 * @returns The UserEntity corresponding to the authenticated user.
+	 */
 	@Query('user')
 	@UseGuards(GqlAuthGuard)
-	async whoAmI(@CurrentUser() user: UserEntity) {
+	async whoAmI(@CurrentUser() user: UserEntity): Promise<UserEntity | null> {
 		return await this.userService.findOneById(user.id)
 	}
 }

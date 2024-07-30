@@ -15,6 +15,7 @@ export class PasswordService {
 	/**
 	 * Return hash
 	 * @param password Plain password
+	 * @returns Password hash
 	 */
 	getHash(password: string): Promise<string> {
 		return hash(password, this.saltRounds)
@@ -24,6 +25,7 @@ export class PasswordService {
 	 * Compare plain password with password hash
 	 * @param password Plain password
 	 * @param passwordHash Password hash
+	 * @returns Boolean=
 	 */
 	compareHash(password: string, passwordHash: string): Promise<boolean> {
 		return compare(password, passwordHash)

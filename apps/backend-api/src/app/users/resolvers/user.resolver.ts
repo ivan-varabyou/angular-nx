@@ -5,8 +5,15 @@ import { UserService } from '../services/user.service'
 import { UseGuards } from '@nestjs/common'
 import { GqlAuthGuard } from '../guards/gql.auth-guard'
 
+/**
+ * Resolver for the User entity.
+ */
 @Resolver('User')
 export class UserResolver {
+	/**
+	 *  constructor
+	 * @param userService
+	 */
 	constructor(private readonly userService: UserService) {
 	}
 

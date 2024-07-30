@@ -6,15 +6,15 @@
     "frontend-admin:build": "nx build frontend-admin",
     "frontend-admin:start": "nx serve frontend-admin",
     "frontend-admin:test": "nx test frontend-admin",
-    "frontend-admin:docs": "nx run frontend-admin:compodoc",
+    "frontend-admin:docs": "npx nx run frontend-admin:compodoc",
     "frontend-client:start": "nx serve frontend-client",
     "frontend-client:build": "nx build frontend-client",
     "frontend-client:test": "nx test frontend-client",
-    "frontend-client:docs": "nx run frontend-client:compodoc",
+    "frontend-client:docs": "npx nx run frontend-client:compodoc",
     "backend-api:start": "nx serve backend-api",
     "backend-api:build": "nx build backend-api",
     "backend-api:test": "nx test backend-api",
-    "backend-api:docs": "nx run backend-api:compodoc",
+    "backend-api:docs": "npx nx run backend-api:compodoc",
     "db:start": "cp .env ./docker-compose && cd docker-compose && docker-compose up -d",
     "db:stop": "cd docker-compose && docker-compose stop && rm .env",
     "db:entities": "node_modules/.bin/tsc --project apps/backend-api/tsconfig.entities.json",
@@ -22,7 +22,7 @@
     "db:migrations": "node_modules/.bin/tsc --project apps/backend-api/tsconfig.migrations.json",
     "db:migrations:run": "npx typeorm-ts-node-commonjs migration:run -d apps/backend-api/ormconfig.ts",
     "db:migrations:revert": "node_modules/.bin/ts-node && node_modules/.bin/typeorm migration:revert",
-    "apps:docs": "nx run frontend-client:compodoc && nx run frontend-admin:compodoc && nx run backend-api:compodoc"
+    "apps:docs": "npx nx run frontend-client:compodoc && npx nx run frontend-admin:compodoc && npx nx run backend-api:compodoc"
   },
   "private": true,
   "dependencies": {

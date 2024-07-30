@@ -21,8 +21,7 @@
     "db:migration:create": "npx typeorm-ts-node-commonjs migration:create apps/backend-api/src/migrations/User",
     "db:migrations": "node_modules/.bin/tsc --project apps/backend-api/tsconfig.migrations.json",
     "db:migrations:run": "npx typeorm-ts-node-commonjs migration:run -d apps/backend-api/ormconfig.ts",
-    "db:migrations:revert": "node_modules/.bin/ts-node && node_modules/.bin/typeorm migration:revert",
-    "apps:docs": "npx nx run frontend-client:compodoc && npx nx run frontend-admin:compodoc && npx nx run backend-api:compodoc"
+    "db:migrations:revert": "node_modules/.bin/ts-node && node_modules/.bin/typeorm migration:revert"
   },
   "private": true,
   "dependencies": {
@@ -73,9 +72,11 @@
     "@angular/compiler-cli": "~18.0.0",
     "@angular/language-service": "~18.0.0",
     "@angular/localize": "~18.0.0",
+    "@compodoc/compodoc": "^1.1.25",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
-    "@ng-bootstrap/ng-bootstrap": "^17.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^17.0.0"
+    git,
     "@nx/cypress": "19.3.2",
     "@nx/eslint": "19.3.2",
     "@nx/eslint-plugin": "19.3.2",

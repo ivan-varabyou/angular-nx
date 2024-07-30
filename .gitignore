@@ -9,6 +9,7 @@ dist
 tmp
 /out-tsc
 /docs
+/docs-temp
 
 # dependencies
 node_modules

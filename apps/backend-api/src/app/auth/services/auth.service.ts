@@ -14,6 +14,12 @@ import { environment } from '../../../../environments/environment'
  */
 @Injectable()
 export class AuthService {
+	/**
+	 *  Constructor
+	 * @param passwordService
+	 * @param jwtService
+	 * @param userService
+	 */
 	constructor(
 		private readonly passwordService: PasswordService,
 		private readonly jwtService: JwtService,
@@ -43,7 +49,7 @@ export class AuthService {
 	 * Logs in a user and generates an access token.
 	 * @param signInPayload - The sign-in payload containing username and
 	 *   password.
-	 * @returns A promise resolving to the sign-in response.
+	 * @returns Promise Data for sign-in in application
 	 * @throws UnauthorizedException if authentication fails.
 	 */
 	async login(signInPayload: ISignAuthPayload): Promise<ISignAuthResponse> {

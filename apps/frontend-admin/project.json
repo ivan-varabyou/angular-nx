@@ -38,7 +38,12 @@
             "apps/frontend-admin/src/styles"
           ]
         },
-        "scripts": []
+        "scripts": [],
+        "server": "apps/frontend-admin/src/main.server.ts",
+        "prerender": true,
+        "ssr": {
+          "entry": "apps/frontend-admin/server.ts"
+        }
       },
       "configurations": {
         "production": {

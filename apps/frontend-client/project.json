@@ -40,7 +40,12 @@
             "apps/frontend-client/src/styles"
           ]
         },
-        "scripts": []
+        "scripts": [],
+        "server": "apps/frontend-client/src/main.server.ts",
+        "prerender": true,
+        "ssr": {
+          "entry": "apps/frontend-client/server.ts"
+        }
       },
       "configurations": {
         "production": {

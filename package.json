@@ -8,6 +8,7 @@
     "frontend-admin:test": "nx test frontend-admin",
     "frontend-admin:docs": "npx nx run frontend-admin:compodoc",
     "frontend-client:start": "nx serve frontend-client",
+    "frontend-client:ssr": "node dist/apps/frontend-client/server/server.mjs",
     "frontend-client:build": "nx build frontend-client",
     "frontend-client:test": "nx test frontend-client",
     "frontend-client:docs": "npx nx run frontend-client:compodoc",
